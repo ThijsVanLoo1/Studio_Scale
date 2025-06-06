@@ -29,7 +29,7 @@
             <img src="images/CosmicCatchLogov2.png" alt="Cosmic Catch">
             <h2>Cosmic Catch</h2>
             <p>Dive into space to explore strange new fish</p>
-            <a class="game-button" href="https://studio-scale.itch.io/cosmic-catch">See More<a>
+            <a class="game-button" href="https://studio-scale.itch.io/cosmic-catch">See More</a>
         </article>
     </div>
 </main>

@@ -14,8 +14,8 @@ function slideShowHandler(e) {
     }
 
     if(e.target.alt === 'Scale') {
-        window.location.href = '#';
+        window.location.href = 'https://studio-scale.itch.io/scale';
     } else if(e.target.alt === 'Cosmic Catch') {
-        window.location.href = '#2';
+        window.location.href = 'https://studio-scale.itch.io/cosmic-catch';
     }
 }
