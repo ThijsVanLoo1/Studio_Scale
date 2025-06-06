@@ -1,0 +1,185 @@
+* {
+    box-sizing:border-box
+}
+
+body {
+    margin: 0;
+    color: #EEEEEE;
+}
+
+/* ///////////////
+//  NAVIGATION  //
+////////////////*/
+
+nav {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+nav img {
+    max-width: 125px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #EEE;
+    font-size: 2em;
+    font-family: "Jim Nightshade", serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-button {
+    background-color: #AA000C;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 50px;
+    font-size: 1.5em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nav-button:hover {
+    text-decoration: none;
+    background-color: #8f000a;
+}
+
+/* ///////////////
+//    HEADER    //
+////////////////*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 100px;
+    background-color: #181413;
+}
+
+.intro-text {
+    color: #EEE;
+    padding: 2rem;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.intro-text h1 {
+    font-size: 4rem;
+}
+
+.intro-text p {
+    font-size: 1.5rem;
+}
+
+/* ///////////////
+//  SLIDESHOW   //
+////////////////*/
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+    display: flex;  /* Zorgt ervoor dat de slides achter elkaar staan */
+    animation: slideShow 8s ease-in-out infinite;  /* Duur van de animatie voor de slideshow */
+}
+
+.mySlides {
+    width: 100%;
+    flex-shrink: 0;  /* Voorkomt dat de slides worden ingekrompen */
+}
+
+.mySlides img {
+    width: 80%;
+    height: 400px;  /* Stel een vaste hoogte in voor alle afbeeldingen */
+    object-fit: cover;  /* Zorgt ervoor dat de afbeelding het frame vult zonder vervorming */
+}
+
+.mySlides img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes slideShow {
+    0%, 25% {
+         transform: translateX(0);  /* Beginpositie en halverwege de animatie (eerste afbeelding) */
+    }
+    51%, 100% {
+        transform: translateX(-100%);  /* Verschuift naar de tweede afbeelding */
+    }
+}
+
+/* ///////////////
+//     MAIN     //
+////////////////*/
+main {
+    background-color: #242424;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px;
+    font-size: 1.25rem;
+    margin-left: 50px;
+}
+
+.card {
+    background-color: #a00000;
+    color: white;
+    width: 25%;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.card h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2.2rem;
+    padding-top: 20px;
+}
+
+.card p {
+    margin-left: 20px;
+    padding-top: 20px;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card::before {
+    content: attr(data-number);
+    font-size: 10rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    z-index: 1;
+}
