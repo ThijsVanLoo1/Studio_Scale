@@ -12,15 +12,10 @@
     <title>Studio Scale</title>
 </head>
 <body>
-    <nav style="margin-bottom: 30px">
-        <div class="nav-flex">
-            <img src="images/ScaleLogo.png">
-            <a href="index.html">Home</a>
-            <a href="games.php">Games</a>
-            <a href="news.html">News</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <a class="nav-button" href="https://studio-scale.itch.io/">Itch.io</a>
+    <nav>
+        <?php
+            include_once 'includes/nav.php';
+        ?>
     </nav>
     <header>
         <section class="intro-text">
@@ -71,14 +66,9 @@
         </div>
     </main>
     <footer>
-        <nav style="margin-top: 30px">
-            <h2>&copy; Studio Scale</h2>
-            <div class="flex-row">
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </nav>
+        <?php
+         include_once 'includes/footer.php';
+        ?>
     </footer>
 </body>
 </html>
